@@ -4,6 +4,7 @@ require 'ews/message_accessors'
 require 'ews/mailbox_accessors'
 require 'ews/push_subscription_accessors'
 require 'ews/calendar_accessors'
+require 'ews/calendar_event_details_accessors'
 require 'ews/room_accessors'
 require 'ews/roomlist_accessors'
 require 'ews/convert_accessors'
@@ -18,6 +19,7 @@ class Viewpoint::EWSClient
   include Viewpoint::EWS::MailboxAccessors
   include Viewpoint::EWS::PushSubscriptionAccessors
   include Viewpoint::EWS::CalendarAccessors
+  include Viewpoint::EWS::CalendarEventDetailsAccessors
   include Viewpoint::EWS::RoomAccessors
   include Viewpoint::EWS::RoomlistAccessors
   include Viewpoint::EWS::ConvertAccessors
